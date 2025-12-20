@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar javascript</title>
+</head>
+<body>
+    <h1 id="judul" class="judul">INI PRAKTIKUM WEB</h1>
+    <p id="hari">HARI KAMIS</p>
+
+    <input type="text" id="inputText">
+    <button id="tombolJudul">GANTI JUDUL</button>
+
+    <script>
+        const judul = document.getElementById('judul')
+        const tombol = document.getElementById('tombolJudul')
+        const input = document.getElementById('inputText')
+        // judul.innerHTML = "<p>HALO DUNIA</p>"
+        // judul.style.backgroundColor = "red";
+        // judul.setAttribute('class', 'halo');
+        // judul.classList.add('judulbaru');
+
+        tombol.onclick = cekInput;
+
+        function cekInput() {
+            console.log(input.value)
+        }
+
+        function ubahJudul() {
+            judul.innerHTML = "<p>HALO UNPAS!</p>"
+        }
+
+        // UBAH JUDUL MENGGUNAKAN INPUT + TOMBOL
+        
+    </script> 
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html> 
